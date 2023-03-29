@@ -45,6 +45,6 @@ let dog = {
     size: 120,
 }
 let {name, age, ...otherProperties} = dog;
-if (name == '') name = 1;
-if (age == '') age = 2;
+if (name == undefined) name = 1;
+if (age == undefined) age = 2;
 console.log(name, age, otherProperties);
